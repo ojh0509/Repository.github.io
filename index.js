@@ -1,4 +1,12 @@
+let a = true;
 function f() {
-  document.querySelector("body").style.fontSize = "10000px";
-}
-console.log("Hello");
+  if(a == true) {
+    document.querySelector("body").style.fontSize = "10000px";
+    a = false;
+  }
+  else {
+    if(a == false){
+      document.querySelector("body").style.fontSize = "5px";
+      a = true;
+  }};
+};
