@@ -47,9 +47,28 @@
         height: 10vh;
         border-radius: 20px;
         cursor: pointer;
-      }
-      #bt{
         text-align: center;
         color: rgb(206, 30, 112);
         font-size: 13px;
-      };
+      }
+      table{
+        margin-left: 30px;
+          font-family: arial, sans-serif;
+          border-collapse: collapse;
+          width: 80%;
+      }
+      td, th{
+        border: 1px solid #dddddd;
+        padding: 8px;
+        text-align: center;
+        border-width: 0px;
+        border-bottom: 2px dashed green;
+      }
+      th{
+        border-top: 2px solid green;
+        border-bottom: 2px solid green;
+      }
+      .fgsfdgfdsagdfsghd{
+        border-top: 0px solid green;
+        border-bottom: 0px solid green;
+      }
