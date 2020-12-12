@@ -5,37 +5,131 @@
     <meta name="viewport" content="width=device-width">
     <title>repl.it</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <base target="_blank">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   </head>
   <body>
+    <marquee id="g">this is marquee tag ฅ(⌯͒• ɪ •⌯͒)ฅnya～ﾝ❣</marquee>
     <mark id="a">This is mark tag<br>Hello, world!</mark>
     <span id="b">이건 span 입니다</span>
     <div id="c">이건 div 입니다</div>
     <div class="link">
-      <a href="link.html">이건 하이퍼링크</a>
+      <a href="https://www.bandainamcoent.co.jp/english/">이건 하이퍼링크</a>
     </div>
     <ul>
-    <li><a href="https://www.naver.com/">Y</a></li>
+    <li><a href="https://www.naver.com/">N</a></li>
     <li><a href="https://www.google.com/">G</a></li>
-    <li><a href="https://www.youtube.com/">N</a></li>
-  </ul>
-  <input type="button" value="Change" id="bt" onclick="f()">
-  <table>
+    <li><a href="https://www.youtube.com/">Y</a></li>
+    </ul>
+    <input type="button" value="Change" id="bt" onclick="f()">
+    <table>
     <tr>
       <th width"40%">이름</th>
-      <th width"40%">연락처</th>
+      <th width"40%">번호</th>
       <th width"40%">회사</th>
     </tr>
     <tr>
-      <th class="fgsfdgfdsagdfsghd" width"40%">아무개</th>
-      <th class="fgsfdgfdsagdfsghd" width"40%">123456789</th>
-      <th class="fgsfdgfdsagdfsghd" width"40%">회사명</th>
+      <th class="fgsfdgfdsagdfsghd" width"40%">TIM</th>
+      <th class="fgsfdgfdsagdfsghd" width"40%">2021</th>
+      <th class="fgsfdgfdsagdfsghd" width"40%">BN</th>
     </tr>
     <tr>
-      <th class="fgsfdgfdsagdfsghd" width"40%">사람이름</th>
-      <th class="fgsfdgfdsagdfsghd" width"40%">987654321</th>
-      <th class="fgsfdgfdsagdfsghd" width"40%">회사이름</th>
+      <th class="fgsfdgfdsagdfsghd" width"40%">LL</th>
+      <th class="fgsfdgfdsagdfsghd" width"40%">2013</th>
+      <th class="fgsfdgfdsagdfsghd" width"40%">LT</th>
     </tr>
     </table>
+    <div id="e">
+      <textarea id="f" placeholder="This is fixed." ></textarea>
+    </div>
+    <label id="i">this is animation-effect</label>
+    <div class="flex-container" id="flex-container">
+      <div id="hello" onclick="Hello()">1</div>
+      <div id="hi" onclick="Hi()">2</div>
+      <div id="haha" onclick="HaHa()">3</div>
+      <div id="hoho" onclick="HoHo()">4</div>
+      <div id="hh" onclick="HH()">5</div>
+    </div>
+    <h1 class="a">Card Flip with Text</h1>
+    <h3 class="a">Hover over the image below:</h3>
+    <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img onclick="Cat()" src="https://static.toiimg.com/photo/msid-67586673/67586673.jpg?3918697" alt="Avatar" style="width:300px;height:300px;">
+      </div>
+      <div class="flip-card-back">
+        <h1>O.J.H.</h1> 
+        <p>Student</p> 
+        <p>I like cats</p>
+      </div>
+    </div>
+  </div>
+  <h2 class="a">Weight Converter</h2>
+  <p class="a">Type a value in the Grams field to convert the value to Kilograms:</p>
+
+  <p class="a">
+    <label>Grams</label>
+    <input id="inputGrams" type="number" placeholder="Grams" oninput="weightConverter(this.value)" onchange="weightConverter(this.value)">
+  </p>
+  <p class="a">Kilograms: <span id="outputKilograms"></span></p>
+  <ul id="gya">
+      <li>고</li>
+      <li>양</li>
+      <li>이</li>
+      <li>는</li>
+      <li>역</li>
+      <li>시</li>
+      <li>귀</li>
+      <li>여</li>
+      <li>워</li>
+  </ul>
+  <input type="text" placeholder="메시지" id="dd" onkeydown="enter()">
+  <input type="button" onclick="msg()" value="도영이에게 메세지 보내기">
+<div id="calendar">
+    <h2></h2>
+    <div class="week"></div>
+    <div class="days"></div>
+    <div id="go_today" class="btn" onclick="javascript:goto_thisMonth()" style="display:none">Today&gt;&gt;</div>
+</div>
+<div class="prev btn round" onclick="javascript:handlePrevCalendar()">이전</div>
+<div class="next btn round" onclick="javascript:handleNextCalendar()">다음</div>
+<div id="demo" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+  
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <a href="https://www.google.com/">
+      <img src="https://lh3.googleusercontent.com/proxy/C5yGTu6C5o48hI4NX2jw8g60q0GxPjLB4yYcWwoqlmgGbtnYXIDgUDH48G74WqrUJ6aU4v3QXZ921FQNndIfhzEmAa9zLVRP4gJdpv99ZbriOPc4ln_I_SbMVzID-z5D0HAs_vH1Z1xSjjkr6TwA7x0Vsons5JqCXrJooy9lkHKyTsIllxJiZciOJFkzEjwhdznwPcCzQ93QN4fF3G-uDsxClbG5Nn18Lr3qen1on9EiYNYxk1sBrrqZ0QjquNBqaBhR-QhsCp9z9WmILn8G6oHw7lR6qcianaBFx7ckeEyyCN0H0xO_G9mJuA" alt="Google" width="1100" height="500"></a>
+    </div>
+    <div class="carousel-item">
+      <a href="https://www.naver.com/">
+      <img src="https://lh3.googleusercontent.com/proxy/KEj64lkqenDR7OjDU0mJqI6j69Qb8rMXShM_vyU0wgrHxT8K0k79cquSAqyckG182v4buc7stwXWDd-aT3hwpvevF7XpHof6fDzwJXgr2ac" alt="Naver" width="1100" height="500"></a>
+    </div>
+    <div class="carousel-item">
+      <a href="https://www.airport.kr/ap/ko/index.do">
+      <img src="https://post-phinf.pstatic.net/MjAxOTA4MDVfMTIy/MDAxNTY0OTczOTc5ODQy.yqDg3DYy5lnXM5fwGwKWEFtAFVQAwwGfspecDWBv0ZAg.VuOP8jdLvbF867WdZDc6RIQGd3s1klMpqYy_bhSGPe4g.JPEG/Inchen_airport.jpg?type=w1200" alt="Inchen_airport" width="1100" height="500"></a>
+    </div>
+  </div>
+  
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
   <script src="index.js"></script>
+  <script src="calendar.js"></script>
   </body>
 </html>
